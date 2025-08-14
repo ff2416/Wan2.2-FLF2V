@@ -1,9 +1,11 @@
 # Wan2.2-FLF2V
 In this repository, we present Wan2.2-FLF2V, which builds upon WAN 2.2 Image-to-Video (I2V) and introduces two key enhancements:
 
-- **Last Frame Constraint:** Ensures alignment between the last frame and the target frame.
+- **Last Frame Constraint**: Enforces precise alignment between the generated last frame and the target frame, ensuring consistent video endpoints.
 
-- **Bidirectional Denoising (Time Reversal Fusion):** Performs denoising in both forward (first-to-last) and reverse (last-to-first) directions, with fusion at each step, enabling better temporal coherence.
+- **Bidirectional Denoising with Time Reversal Fusion**: Performs denoising both forward (first-to-last) and backward (last-to-first), fusing intermediate results at every step for superior temporal coherence. To accommodate bidirectional fusion, the original denoising formula—where each step depends on the previous one—has been redesigned, allowing non-continuous, step-wise integration of forward and backward denoised states.
+
+- **Prompt-Adapted Temporal Attention**: During the reverse pass, temporal self-attention is rotated to align backward generation with the prompt, enabling bidirectionally refined, prompt-consistent video sequences.
 
 With these improvements, we achieve First–Last–Frame-to-Video generation (FLF2V), enabling controllable and consistent video synthesis given the first and last frames as constraints.
 
