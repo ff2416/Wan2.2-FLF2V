@@ -56,3 +56,49 @@ torchrun --nproc_per_node=8 --master_port 39550 generate.py \
     --bidirectional_sampling
 ```
 If you encounter OOM (Out-of-Memory) issues, you can use the `--offload_model True`, `--convert_model_dtype` and `--t5_cpu` options to reduce GPU memory usage.
+## Examples
+
+<table>
+<tr>
+<td>
+<video src="https://github.com/user-attachments/assets/5e151a36-3408-4459-b0f5-955a929e1aaf" width=250></video>
+</td>
+<td>
+<video src="https://github.com/user-attachments/assets/fff6b7a8-d8a7-40de-b763-1a72f97fcb28" height=250></video>
+</td>
+<td>
+<video src="https://github.com/user-attachments/assets/3db6cbf9-28e9-4764-bfaf-bd4a7343a117" height=250></video>
+</td>
+</tr>
+</table>
+
+<table>
+<tr>
+<td>
+<video src="https://github.com/user-attachments/assets/be0ee319-8e75-4edc-ac38-1a6194a6a49e" height=250></video>
+</td>
+<td>
+<video src="https://github.com/user-attachments/assets/ccae1fa1-5cab-4eaf-964e-490c9fdd685c" height=250></video>
+</td>
+<td>
+<video src="https://github.com/user-attachments/assets/7a27ca87-dbb8-469e-91a2-b0080bbe6d52" height=250></video>
+</td>
+</tr>
+</table>
+
+<table>
+<tr>
+<td>
+<video src="https://github.com/user-attachments/assets/0a82dbea-4621-4bf1-b65a-5837c3a7ed79" height=250></video>
+</td>
+<td>
+<video src="https://github.com/user-attachments/assets/a5146080-144f-4e19-a6c1-a2ca6e88f5b5" height=250></video>
+</td>
+<td>
+<video src="https://github.com/user-attachments/assets/a3f0acea-504c-4a43-ba21-bcdeddfaa055" height=250></video>
+</td>
+</tr>
+</table>
+
+
+
