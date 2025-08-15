@@ -1,5 +1,11 @@
-# Wan2.2-FLF2V
-In this repository, we present Wan2.2-FLF2V, which builds upon WAN 2.2 Image-to-Video (I2V) and introduces several key enhancements:
+# WanFM
+<p align="center">
+<img height="250" alt="logo" src="https://github.com/user-attachments/assets/5c38e92c-727f-47e4-84b6-5df3f0121aa8" />
+<p>
+<p align="center">
+Pengjun Fang, Harry Yang
+</p>
+In this repository, we present WanFM, which builds upon WAN 2.2 Image-to-Video (I2V) and introduces several key enhancements:
 
 - **Last Frame Constraint**: Enforces precise alignment between the generated last frame and the target frame, ensuring consistent video endpoints.
 
@@ -8,8 +14,12 @@ In this repository, we present Wan2.2-FLF2V, which builds upon WAN 2.2 Image-to-
 - **Prompt-Adapted Temporal Attention**: During the reverse pass, temporal self-attention is rotated to align backward generation with the prompt, enabling bidirectionally refined, prompt-consistent video sequences.
 
 With these improvements, we achieve First–Last–Frame-to-Video generation (FLF2V), enabling controllable and consistent video synthesis given the first and last frames as constraints.
+## Demo
+<div align="center">
+  <video src="https://github.com/user-attachments/assets/0e72ac8b-75a2-47fa-9530-c89650621e92" width="100%" poster=""> </video>
+</div>
 
-## Run Wan2.2-FLF2V
+## Run WanFM
 ### Enviroment Preparation
 Please see Wan2.2 (https://github.com/Wan-Video/Wan2.2?tab=readme-ov-file#installation).
 ### Model Download
@@ -56,7 +66,7 @@ torchrun --nproc_per_node=8 --master_port 39550 generate.py \
     --bidirectional_sampling
 ```
 If you encounter OOM (Out-of-Memory) issues, you can use the `--offload_model True`, `--convert_model_dtype` and `--t5_cpu` options to reduce GPU memory usage.
-## Examples
+## More Examples
 
 <table>
 <tr>
