@@ -5,7 +5,7 @@
 <p align="center">
 Pengjun Fang, Harry Yang
 </p>
-In this repository, we present WanFM, which builds upon WAN 2.2 Image-to-Video (I2V) and introduces several key enhancements:
+In this repository, we present WanFM, which builds upon Wan 2.2 Image-to-Video (I2V) and introduces several key enhancements:
 
 - **Last Frame Constraint**: Enforces precise alignment between the generated last frame and the target frame, ensuring consistent video endpoints.
 
