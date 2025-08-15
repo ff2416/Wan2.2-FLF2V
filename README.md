@@ -1,11 +1,11 @@
-# WanFM
+# Wan Frame Morphing (WanFM)
 <p align="center">
 <img height="250" alt="logo" src="https://github.com/user-attachments/assets/5c38e92c-727f-47e4-84b6-5df3f0121aa8" />
 <p>
 <p align="center">
 Pengjun Fang, Harry Yang
 </p>
-In this repository, we present WanFM, which builds upon Wan 2.2 Image-to-Video (I2V) and introduces several key enhancements:
+In this repository, we present WanFM (frame morphing), which builds upon Wan 2.2 Image-to-Video (I2V) and introduces several key enhancements:
 
 - **Last Frame Constraint**: Enforces precise alignment between the generated last frame and the target frame, ensuring consistent video endpoints.
 
