@@ -37,7 +37,7 @@ python generate.py \
     --frame_num 81 \
     --sample_steps 40 \
     --sample_shift 16 \
-    --sample_guide_scale 4 \
+    --sample_guide_scale 5 \
     --prompt <prompt> \
     --first_frame <first frame path> \
     --last_frame <last frame path> \
@@ -55,7 +55,7 @@ torchrun --nproc_per_node=8 --master_port 39550 generate.py \
     --frame_num 81 \
     --sample_steps 40 \
     --sample_shift 16 \
-    --sample_guide_scale 4 \
+    --sample_guide_scale 5 \
     --dit_fsdp \
     --t5_fsdp \
     --ulysses_size 2 \
